@@ -1,0 +1,170 @@
+#topBar {
+  top : 50px;
+  position: absolute;
+  width : 50%;
+  margin-left : 25%;
+  padding : 1px;
+  BACKGROUND-COLOR: #804040;
+  border: 1px #804040 solid;
+  color:White;
+  font-size: 12px; 
+  font-weight: Bold; 
+  text-indent: 5pt;
+  height:15px;
+  vertical-align:middle;
+  text-transform:capitalize;
+}
+#main {
+  top : 70px;
+  position: absolute;
+  width : 50%;
+  margin-left : 25%;
+  padding : 1px;
+  border: 1px #804040 solid;
+  height: 200px;
+} 
+#LoginCSLogo {
+  top : 230px;
+  position: relative;
+  width : 20%;
+  margin-left : 32%; 
+  height: 60px;
+}
+#LoginSeria1 {
+  top : 238px;
+  position: absolute;
+  width : 40%;
+  margin-left : 20%; 
+  height: 15px;
+}  
+#LoginSeria2 {
+  top : 258px;
+  position: absolute;
+  width : 40%;
+  margin-left : 20%; 
+  height: 15px;
+}  
+#LoginSeria3 {
+  top : 278px;
+  position: absolute;
+  width : 40%;
+  margin-left : 20%; 
+  height: 15px;
+}  
+#LoginSeria4 {
+  top : 295px;
+  position: absolute;
+  width : 245px;
+  margin-left : 200px; 
+  height: 15px;
+} 
+#LoginProductLogo {
+  top : 230px;
+  position: absolute;
+  width : 50px;
+  margin-left : 450px; 
+  height: 60px;
+} 
+#loginLeftBar {
+  top : 4px;
+  position: absolute;
+  width : 128px;
+  margin-left : 1px;
+  border: 1px #804040 solid;
+  height: 295px;
+} 
+#loginMiddleBar {
+  top : -50px;
+  position: relative;
+  width : 60%;
+  margin-left : 35%;
+  height: 150px;
+  border: 1px #804040 solid;
+  BACKGROUND-COLOR: #F4CC82;
+} 
+#LoginItem1 {
+  top : 40px;
+  position: relative;
+  width : 30%;
+  margin-left : 2%; 
+} 
+#LoginItem2 {
+  top : 70px;
+  position: relative;
+  width : 30%;
+  margin-left : 2%; 
+}  
+#LoginItem3 {
+  top : 100px;
+  position: absolute;
+  width : 80px;
+  margin-left : 50px; 
+}
+#LoginItem4 {
+  top : 130px;
+  position: absolute;
+  width : 80px;
+  margin-left : 50px; 
+}
+#UserID {
+  top : 288px;
+  position: absolute;
+  width : 183px;
+  margin-left : 480px; 
+  text-align:left;
+}
+#PassWord {
+  top : 327px;
+  position: absolute;
+  width : 183px;
+  margin-left : 480px; 
+  text-align:left;
+}
+#LoginItem1A {
+  top : 40px;
+  position: absolute;
+  width : 150px;
+  margin-left : 135px; 
+}  
+#LoginItem2A {
+  top : 70px;
+  position: absolute;
+  width : 150px;
+  margin-left : 135px; 
+}  
+#LoginItem3A {
+  top : 100px;
+  position: absolute;
+  width : 150px;
+  margin-left : 135px; 
+} 
+#LoginItem4A {
+  top : 130px;
+  position: absolute;
+  width : 150px;
+  margin-left : 135px; 
+} 
+#loginFooter1 
+{
+  top : 450px;
+  position: absolute;
+  width : 400px;
+  margin-left : 300px;
+} 
+#loginFooter2 {
+  top : 200px;
+  position: absolute;
+  width : 330px;
+  margin-left : 150px;
+} 
+#LoginFooter3 {
+  top : 320px;
+  position: absolute;
+  width : 50%;
+  margin-left : 25%;
+  padding : 1px;
+  border: 1px #804040 solid;
+} 
+
+
+

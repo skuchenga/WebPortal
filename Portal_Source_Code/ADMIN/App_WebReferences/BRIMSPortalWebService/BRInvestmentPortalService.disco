@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx?wsdl" docRef="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx" xmlns:q1="http://localhost/HFCPortalService" binding="q1:BRInvestmentPortalServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx" xmlns:q2="http://localhost/HFCPortalService" binding="q2:BRInvestmentPortalServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

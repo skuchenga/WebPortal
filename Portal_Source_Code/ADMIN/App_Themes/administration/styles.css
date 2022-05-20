@@ -1,0 +1,986 @@
+﻿body {
+}
+
+/* GENERAL ELEMENTS */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body, input, select, textarea { font-family: verdana, arial, helvetica, sans-serif; font-size: 11px;
+	}
+body
+{
+	color: #0e4302;
+	background-color: #fff;
+	text-align: center;
+}
+
+a:link
+{
+	color: #0060BF;
+	text-decoration: underline;
+}
+a:visited
+{
+	color: #0060BF;
+	text-decoration: underline;
+}
+a:active
+{
+	color: #0060BF;
+	text-decoration: underline;
+}
+a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: "Lucida Grande" , "Lucida Sans Unicode" , geneva, verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #666;
+}
+h1
+{
+	font-size: 1.8em;
+	margin: 0em 0em 0.6em 0em;
+	color: #EC5800;
+}
+h2
+{
+	font-size: 1.5em;
+	margin: 1.2em 0em 0.4em 0em;
+}
+h3
+{
+	font-size: 1.4em;
+	margin: 1.2em 0em 0.4em 0em;
+	color: #EC5800;
+}
+h4
+{
+	font-size: 1.2em;
+	margin: 1.2em 0em 0.4em 0em;
+}
+h5
+{
+	font-size: 1.0em;
+	margin: 1.2em 0em 0.4em 0em;
+}
+h6
+{
+	font-size: 0.8em;
+	margin: 1.2em 0em 0.4em 0em;
+}
+
+img
+{
+	border: 0px;
+}
+
+p
+{
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin: 1.2em 0em 1.2em 0em;
+	width: 388px;
+}
+li > p
+{
+	margin-top: 0.2em;
+}
+pre
+{
+	font-family: monospace;
+	font-size: 1.0em;
+}
+strong, b
+{
+	font-weight: bold;
+}
+
+/* PAGE ELEMENTS */
+
+/* Content */
+
+#content
+{
+	margin: 0em auto;
+	width: 92%;
+	padding: 5px 0 0px 0;
+	text-align: left;
+	height: 617px;
+}
+.content
+{
+	margin-left: 4.5em;
+	margin-right: 4.5em;
+}
+.content ol, .content ul, .content li
+{
+	font-size: 1.0em;
+	line-height: 1.3em;
+	margin: 0.2em 0 0.1em 1.5em;
+}
+.content ol.terms li
+{
+	margin-bottom: 1em;
+}
+
+/* Header */
+
+#header
+{
+	padding-bottom: 10em;
+}
+#headerlogo
+{
+	float: left;
+}
+#headerlogo img
+{
+	width: 228px;
+	height: 78px;
+}
+#headernav
+{
+	float: right;
+}
+
+label
+{
+	font-weight: bold;
+}
+#reminders label
+{
+	font-weight: normal;
+}
+
+table.tabbedtable
+{
+	padding-left: 3em;
+}
+table.tabbedtable td
+{
+	padding-bottom: 5px;
+}
+table.tabbedtable label
+{
+	text-align: right;
+	padding-right: 9px;
+}
+.hiddenlabel
+{
+	visibility: hidden;
+}
+.largelink
+{
+	border: 1px solid #cacaca;
+	padding: 10px;
+	background-color: #E8EEF7;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.largelinkwrap
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.input, textarea, label, select
+{
+	color: Blue;
+}
+td, th
+{
+	overflow: hidden;
+}
+
+table.gridtable
+{
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.gridtable th
+{
+	border-width: 1px;
+	padding: 0px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td
+{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.hovertable
+{
+	font-family: verdana,arial,sans-serif;
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+table.hovertable th
+{
+	background-color: #c3dde0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.hovertable tr
+{
+	background-color: #c3d8f1;
+}
+table.hovertable td
+{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.label
+{
+	color: Blue;
+}
+#signupform
+{
+	background-color: #fff;
+	border: 0px solid #000;
+	padding: 5px;
+}
+
+#signuptab
+{
+	float: left;
+	text-align: right;
+	width: 100%;
+	border: 1px solid #4872B0;
+	background: #fff url(   "bg.gif" ) repeat-x bottom;
+	font-size: 1.0em;
+	line-height: normal;
+}
+#signuptab ul
+{
+	margin: 0;
+	padding: 0px 10px 0px 10px;
+	list-style: none;
+}
+#signuptab li
+{
+	float: left;
+	background: url(   "left_white.png" ) no-repeat left top;
+	margin: 0;
+	padding: 0 3px 0 9px;
+	border-bottom: 1px solid #CACACA;
+}
+#signuptab a
+{
+	float: left;
+	display: block;
+	width: .1em;
+	background: url(   "right_white.png" ) no-repeat right top;
+	padding: 2px 15px 0px 6px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	white-space: nowrap;
+}
+#signuptab > ul a
+{
+	width: auto;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#signuptab a
+{
+	float: none;
+}
+/* End IE5-Mac hack */
+#signuptab a:hover
+{
+	color: #333;
+}
+#signuptab #signupcurrent
+{
+	background-position: 0 -150px;
+	border-width: 0;
+}
+#signuptab #signupcurrent a
+{
+	background-position: 100% -150px;
+	padding-bottom: 1px;
+	color: #000;
+}
+#signuptab li:hover, #signuptab li:hover a
+{
+	background-position: 0% -150px;
+	color: #000;
+}
+#signuptab li:hover a
+{
+	background-position: 100% -150px;
+}
+
+/* Signup box */
+
+#signupbox
+{
+	width: 61%;
+	text-align: center;
+	margin: 0em auto;
+}
+
+#signupwrap
+{
+	border: 1px solid #4872B0;
+	text-align: left;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	clear: both;
+}
+#frame
+{
+	border: 0px solid #4872B0;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	clear: both;
+}
+#myIframe
+{
+	border: 1px solid #4872B0;
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	clear: both;
+	height: 450px;
+}
+#nav
+{
+	border: 0px solid #4872B0;
+	text-align: left;
+	clear: both;
+	width: 250px;
+	height: 450px;
+}
+/* Unsupported browsers */
+
+.orange_rbcontent
+{
+	padding: 0.4em;
+}
+.orange_rbroundbox
+{
+	width: 100%;
+}
+
+#unsupported
+{
+	font-weight: bold;
+	text-align: left;
+}
+
+/*#content {
+  padding-top: 15px;
+}*/
+
+/* Signup form */
+
+#signupform table
+{
+	border-spacing: 0px;
+	border-collapse: collapse;
+	empty-cells: show;
+}
+
+#signupform .label
+{
+	padding-top: 2px;
+	padding-right: 8px;
+	vertical-align: top;
+	text-align: right;
+	width: 125px;
+	white-space: nowrap;
+}
+
+#signupform .field
+{
+	padding-bottom: 10px;
+	white-space: nowrap;
+}
+
+#signupform .status
+{
+	padding-top: 2px;
+	padding-left: 8px;
+	vertical-align: top;
+	width: 246px;
+	white-space: nowrap;
+}
+
+.textfield
+{
+	width: 150px;
+}
+
+.label
+{
+	
+	padding-left: 16px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	color: #0056A8
+;
+}
+
+#signupform label.checked
+{
+	background: url(   "checked.gif" ) no-repeat 0px 0px;
+}
+
+.success_msg
+{
+	font-weight: bold;
+	color: #0060BF;
+	margin-left: 19px;
+}
+
+#signupform #dateformatStatus, #signupform #termsStatus
+{
+	margin-left: 6px;
+}
+
+#signupform #dateformat_eu
+{
+	vertical-align: middle;
+}
+
+#signupform #ldateformat_eu
+{
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+#signupform #dateformat_am
+{
+	vertical-align: middle;
+}
+
+#signupform #ldateformat_am
+{
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+#signupform #termswrap
+{
+	float: left;
+}
+
+#signupform #terms
+{
+	vertical-align: middle;
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
+
+#signupform #lterms
+{
+	font-weight: normal;
+	vertical-align: middle;
+	float: left;
+	display: block;
+	width: 350px;
+	white-space: normal;
+}
+
+#signupform #lsignupsubmit
+{
+	visibility: hidden;
+}
+div.curFocus
+{
+	background: #fdecb2;
+}
+.button
+{
+	clear: both;
+	font-family: Verdana;
+	margin-left: 0px;
+	width: 125px;
+	text-align: center;
+	color: #284E98;
+	font-size: 11px;
+	font-weight: bold;
+}
+.input
+{
+	float: left;
+	font-size: 12px;
+	padding: 4px 2px;
+	border: solid 1px #aacfe4;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SERVER CONTROLS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.adminButtonBlue
+{
+	background: url(images/blue_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #0f72ac;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 22px;
+	padding: 0 10px 0 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.adminButton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	text-align: right;
+	height: 20px;
+	padding: 0 10px 0 10px;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.f2Button
+{
+	background: url(images/blue_button_bg.gif) no-repeat 18% 20% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	text-align: right;
+	height: 15px;
+	padding: 0 10px 0 10px;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+.adminInput
+{
+	border: 1px solid #acacac;
+	width: 250px;
+}
+
+.adminInputNoWidth
+{
+	border: 1px solid #acacac;
+}
+
+label
+{
+	padding-left: 3px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER ERRORS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.messageBox
+{
+    background-color:#F4F4F4;
+	background-position: 7px 5px;
+	background-repeat: no-repeat;
+	color: #333333;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin: 5px 0;
+	padding: 8px 8px 8px 30px;
+}
+
+.messageBoxError
+{
+    background-color: #FFECEC;
+    background-image: url('images/ErrorMessage.gif')
+}
+
+.messageBoxSuccess
+{
+    background-image: url('images/SuccessMessage.gif')
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ADMIN GRID VIEW
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tablestyle
+{
+	font-family: arial;
+	font-size: 11px;
+	border: 1px solid #808080;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	color: #245D75;
+	width: 100%;
+}
+
+.tablestyle td a
+{
+	color: #D16400;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.altrowstyle
+{
+	background-color: #F4FAFF;
+}
+
+.headerstyle th
+{
+	/*background: url('images/admin-gvw-bg.gif') repeat-x 50%;
+	background: url(images/blue_button_bg.gif) repeat-x 25% 50% #333;*/
+	background: url(Images/grid_header_back.png) repeat-x;
+	color: #fff;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	border: solid 1px #676767;
+	font-size:12px;
+}
+
+.headerstyle th a
+{
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	display: block;
+	padding-right: 10px;
+}
+
+.rowstyle td, .altrowstyle td
+{
+	padding: 4px 10px 4px 10px;
+	border-right: solid 1px #A0C0E7;
+	border-right-color: #808080;
+}
+
+.PagerStyle
+{
+	height: 28px;
+	background: url(Images/grid_header_back.png) repeat-x;
+	background: #EEEEEE;
+	vertical-align: middle;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER PAGE WRAPPERS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.master-wrapper-page
+{
+
+}
+
+.master-wrapper-content
+{
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.header
+{
+	height: 70px;
+	width: 100%;
+	background: url('images/admin-header-bg.gif') repeat-x;	
+	position: relative;
+}
+
+.header .logo
+{
+	background: url('images/logo.gif');
+	display: block;
+	width: 340px;
+	height: 70px;
+	text-decoration: none;	
+}
+
+.header .languageselector
+{
+    position: absolute;
+	right: 300px;
+	top: 7px;
+	text-align: right;
+}
+
+.header .links
+{
+	position: absolute;
+	right: 10px;
+	top: 7px;
+	text-align: right;
+}
+
+a img
+{
+	border: 0;
+}
+.header .links .separator
+{
+	color: #FFF;
+	padding: 0 3px 0 3px;
+}
+
+.header .login-info
+{
+	position: absolute;
+	right: 5px;
+	top: 35px;
+    text-align: right;
+	color: #e7e7e7;
+	font-size: 10px;
+}
+
+.header .login-info .a
+{
+    color: #009FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header .version
+{
+	position: absolute;
+	right: 5px;
+	top: 55px;
+	text-align: right;
+	color: #e7e7e7;
+	font-size: 10px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER MENU
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.header-menu
+{
+	width: 100%;
+	line-height: 29px;
+	height:31px;
+	background: url('images/admin-menu-bg.gif') repeat-x;	
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER STATUS BAR
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.status-bar
+{
+	background: #e7efef no-repeat;
+	height: 26px;
+	border: solid 1px #acacac;
+	padding: 0px 5px 0 5px;
+}
+
+.status-bar .help
+{
+	padding-top: 5px;
+	float:left;
+	font-weight: bold;
+}
+
+.status-bar .breadcrumb
+{
+	float: right;
+	text-align: right;
+	padding-top: 5px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER ERRORS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.messageBox
+{
+    background-color:#F4F4F4;
+	background-position: 7px 5px;
+	background-repeat: no-repeat;
+	color: #333333;
+	font-family: Tahoma;
+	font-size: 11px;
+	margin: 5px 0;
+	padding: 8px 8px 8px 30px;
+}
+
+.messageBoxError
+{
+    background-color: #FFECEC;
+    background-image: url('images/ErrorMessage.gif')
+}
+
+.messageBoxSuccess
+{
+    background-image: url('images/SuccessMessage.gif')
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER CONTENT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.content .cph
+{
+	padding: 20px 15px 5px 15px;	
+}
+
+/*
+TABLES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+td
+{
+	vertical-align: middle;
+}
+
+td.fieldname
+{
+	font-size: 12px;
+}
+
+.table-container
+{
+}
+
+.table-container .row
+{
+}
+
+.table-container .row .item-name
+{
+	padding: 3px 10px 0px 0px;
+	display: block;
+	white-space: nowrap;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.table-container .row .item-value
+{
+	padding: 3px 0px 0px 0px;
+	vertical-align: middle;
+}
+
+table.adminContent
+{
+	border-collapse: collapse;
+	color: #333;
+	font-size: 12px;
+	margin: 0px;
+	width: 80%;
+	vertical-align: middle;
+	text-align: left;
+}
+
+table.adminContent td.adminTitle
+{
+	padding: 4px 4px 4px 4px;
+}
+
+table.adminContent td.adminData
+{
+	padding: 4px 4px 4px 4px;
+}
+
+td.adminTitle
+{
+	text-align: left;
+	vertical-align: middle;
+	white-space:nowrap;
+	width: 175px;
+}
+
+td.adminTitle-right
+{
+	text-align: right;
+	vertical-align: middle;
+	white-space:nowrap;
+	width: 175px;
+	padding-right: 5px;
+}
+
+td.adminTitle img
+{
+	vertical-align: bottom;
+	padding-right: 2px;
+}
+
+td.adminData
+{
+	text-align: left;
+	vertical-align: middle;
+}
+
+tr.adminSeparator hr
+{
+	background-color:#D3D3D3;
+    border:medium none;
+    color:#D3D3D3;
+    height:1px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:0;
+}
+
+span.nop-tooltip
+{
+	white-space:nowrap;
+}
+
+span.cbHeader
+{
+	text-align:center;
+}

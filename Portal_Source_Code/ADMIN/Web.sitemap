@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="Default.aspx" title="Home"  description="Home Page">
+		<siteMapNode  title="Manage Clients" description="Manage Clients">
+			<siteMapNode url="frmAddClient.aspx" title="Maintain Clients"  description="Clients" />
+			<siteMapNode url="frmLinkAccount.aspx" title="Link Client Accounts"  description="Link Client Accounts" />
+		</siteMapNode>
+		<siteMapNode  title="Maintenance" description="Accounts">
+			<siteMapNode url="frmChangePassword.aspx" title="Change Password"  description="Change Password" />
+		</siteMapNode>
+		<siteMapNode  title="Authorization" description="Supervision">
+			<siteMapNode url="AdminTrxSupervision.aspx" title="Authorize New Users"  description="Supervise Users" />
+		</siteMapNode>
+		<siteMapNode  title="System" description="System">
+			<siteMapNode url="CreateAdministrators.aspx" title="Add New Administrator"  description="Administrators" />
+			<siteMapNode url="sendstatement.aspx" title="Send Statement"  description="Statement" />
+      <siteMapNode url="frmAMEmail.aspx" title="Send email"  description="Send email (any)" />
+      <siteMapNode url="frmSystemSettings.aspx" title="System Settings"  description="System Settings" />
+		</siteMapNode>
+
+	</siteMapNode>
+
+</siteMap>
