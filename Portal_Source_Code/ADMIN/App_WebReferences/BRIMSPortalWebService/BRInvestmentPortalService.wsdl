@@ -553,10 +553,10 @@
   </wsdl:binding>
   <wsdl:service name="BRInvestmentPortalService">
     <wsdl:port name="BRInvestmentPortalServiceSoap" binding="tns:BRInvestmentPortalServiceSoap">
-      <soap:address location="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx" />
+      <soap:address location="http://localhost/BRIMSPortalWebService/BRInvestmentPortalService.asmx" />
     </wsdl:port>
     <wsdl:port name="BRInvestmentPortalServiceSoap12" binding="tns:BRInvestmentPortalServiceSoap12">
-      <soap12:address location="http://localhost/HFCPortalService/BRInvestmentPortalService.asmx" />
+      <soap12:address location="http://localhost/BRIMSPortalWebService/BRInvestmentPortalService.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -147,7 +147,7 @@ namespace BRInvestmentPortal.AppCode
                 strDBServer = WebConfigurationManager.AppSettings["DBServer"].ToString();
                 strDBName = WebConfigurationManager.AppSettings["DBName"].ToString();
                 strDBUserID = WebConfigurationManager.AppSettings["DBUserID"].ToString();
-                strDBUserPWD = EncDecp.DecyptKey((WebConfigurationManager.AppSettings["DBUserPWD"])).ToString();
+                strDBUserPWD = WebConfigurationManager.AppSettings["DBUserPWD"].ToString();
 
 
                 //if (strDataItem.ToString() == "1")
