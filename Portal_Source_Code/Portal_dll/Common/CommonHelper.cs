@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.Configuration;
 using System.IO;
 using System.Text.RegularExpressions;
-
+using BrDataEncryption;
 
 namespace HFCPortal.Common
 {
@@ -25,16 +25,14 @@ namespace HFCPortal.Common
 
         public string[] ConnectionProperties { get; set; }
 
+        private static BrWebDataEcryption brWDE = new BrWebDataEcryption();
 
         public static string GetConnectionString()
         {
             SetConnectionProperties();
 
-            //string connString = "user id=" + dbUser + ";password=" + DecryptItem(dbPWD) + ";server=" + DecryptItem(dbServer) + ";Trusted_Connection=no;database=" + dbName + ";connection timeout=300";
-            //string connString = "Data Source=" + dbServer + "; Initial Catalog = " + dbName + ";Persist Security Info=True;User ID=" + dbUser + ";Password=" + DecryptItem(dbPWD) + ";connection timeout=300";
-            //string connString = "Data Source=" + dbServer + "; Initial Catalog = " + dbName + ";Persist Security Info=True;User ID=" + dbUser + ";Password=" + dbPWD + ";connection timeout=300";
-            //string connString = "Data Source=" + dbServer + "; Initial Catalog = " + dbName + ";Persist Security Info=True;User ID=" + dbUser + ";Password=" + dbPWD + ";connection timeout=300";
-            string connString = "Data Source=" + dbServer + "; Initial Catalog = " + dbName + ";Persist Security Info=True;Trusted_Connection=SSPI; connection timeout=300";
+            string connString = "user id=" + dbUser + ";password=" + brWDE.DecyptKey(dbPWD) + ";server=" + DecryptItem(dbServer) + ";Trusted_Connection=no;database=" + dbName + ";connection timeout=300";
+            
             return connString;
         }
 
@@ -45,35 +43,6 @@ namespace HFCPortal.Common
             dbName = WebConfigurationManager.AppSettings["DBName"];
             dbUser = WebConfigurationManager.AppSettings["DBUserID"];
             dbPWD = WebConfigurationManager.AppSettings["DBUserPWD"];
-
-            //string strConnectionString = WebConfigurationManager.ConnectionStrings["coreconn"].ConnectionString;
-
-            //if (!string.IsNullOrEmpty(strConnectionString))
-            //{
-            //    ConnectionProperties = strConnectionString.Split(';');
-            //    //set dbName
-            //    foreach (string conProp in ConnectionProperties)
-            //    {
-            //        if (conProp.Contains("Data Source="))
-            //        {
-            //            dbServer = conProp.Replace("Data Source=", "");
-            //        }
-            //        else if (conProp.Contains("Initial Catalog="))
-            //        {
-            //            dbName = conProp.Replace("Initial Catalog=", "");
-            //        }
-            //        else if (conProp.Contains("User ID="))
-            //        {
-            //            dbUser = conProp.Replace("User ID=", "");
-            //        }
-            //        else if (conProp.Contains("Password="))
-            //        {
-            //            dbPWD = conProp.Replace("Password=", "");
-            //        }
-
-            //    }
-            //}
-
         }
 
 

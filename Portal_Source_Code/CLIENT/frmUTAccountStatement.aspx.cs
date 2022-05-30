@@ -99,57 +99,32 @@ public partial class frmUTAccountStatement : System.Web.UI.Page
             string conString = hfcs.GetMyString();
             string[] conProperties;
 
-            //if (!string.isnullorempty(constring))
-            //{
-            //    conproperties  = constring.split(';');
-            //    foreach (string conprop in conproperties)
-            //     {
-            //         if (conprop.contains("server="))
-            //         {
-            //             connectioninfo.servername = encdepc.decyptkey(conprop.replace("server=", "")).tostring();
-            //         }
-            //         else if (conprop.contains("database="))
-            //         {
-            //             connectioninfo.databasename = encdepc.decyptkey(conprop.replace("database=", "")).tostring();
-            //         }
-            //         else if (conprop.contains("user id="))
-            //         {
-            //             connectioninfo.userid = encdepc.decyptkey(conprop.replace("user id=", "")).tostring();
-            //         }
-            //         else if (conprop.contains("password="))
-            //         {
-            //             connectioninfo.password = encdepc.decyptkey(conprop.replace("password=", "")).tostring();
-            //         }
-
-            //     }
-
-            //}
-
             if (!string.IsNullOrEmpty(conString))
             {
                 conProperties = conString.Split(';');
-                foreach (string conProp in conProperties)
+                foreach (string conprop in conProperties)
                 {
-                    if (conProp.Contains("server="))
+                    if (conprop.Contains("server="))
                     {
-                        connectionInfo.ServerName = "JANE-LAPTOP"; //conProp.Replace("server=", "").ToString();
+                        connectionInfo.ServerName = EncDepc.DecyptKey(conprop.Replace("server=", "")).ToString();
                     }
-                    else if (conProp.Contains("database="))
+                    else if (conprop.Contains("database="))
                     {
-                        connectionInfo.DatabaseName = "Amana_Capital" ; //conProp.Replace("database=", "").ToString();
+                        connectionInfo.DatabaseName = EncDepc.DecyptKey(conprop.Replace("database=", "")).ToString();
                     }
-                    else if (conProp.Contains("user id="))
+                    else if (conprop.Contains("user id="))
                     {
-                        connectionInfo.UserID = "sa"; //conProp.Replace("user id=", "").ToString();
+                        connectionInfo.UserID = EncDepc.DecyptKey(conprop.Replace("user id=", "")).ToString();
                     }
-                    else if (conProp.Contains("password="))
+                    else if (conprop.Contains("password="))
                     {
-                        connectionInfo.Password = "@groundzer036"; //conProp.Replace("password=", "").ToString();
+                        connectionInfo.Password = EncDepc.DecyptKey(conprop.Replace("password=", "")).ToString();
                     }
 
                 }
 
             }
+         
 
             crUTAccountStatement.ReportSource = rpt;
             SetDBLogonForReport(connectionInfo, rpt);

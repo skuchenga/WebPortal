@@ -52,9 +52,7 @@ namespace HFCPortal
             DbProviderFactory dpf = DbProviderFactories.GetFactory(DataProviderName);
             DbConnection BR_cnConnection = dpf.CreateConnection();
 
-            //BR_cnConnection.ConnectionString = CommonHelper.GetConnectionString();
-
-            BR_cnConnection.ConnectionString = "Data Source=. ;Initial Catalog = BR_Portal ;Persist Security Info=True;User ID=sa;Password=@groundzer036 ;connection timeout=300";
+            BR_cnConnection.ConnectionString = CommonHelper.GetConnectionString();
 
             string c = BR_cnConnection.ConnectionString.ToString();
 
